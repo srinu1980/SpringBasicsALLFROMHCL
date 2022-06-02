@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	
+	<bean id="collectionBean" class="com.hcl.collections.Emp">
+	<property name="name" value="Deepak"/>
+	
+	<property name="phones">
+	
+	<list>
+	<value>9349349394</value>
+	<value>9849349394</value>
+	<value>9949349394</value>
+	<value>9249349394</value>
+	<value>7749349394</value>
+	
+	
+	</list>
+	
+	</property>
+	
+	
+	<property name="addresses">
+	
+	<set>
+	
+	<value>Delhi</value>
+	<value>Pune</value>
+	<value>Lucknow</value>
+	<value>Kanpur</value>
+	<value>Pune</value>
+	<value>Lucknow</value>
+	
+	</set>
+	
+	</property>
+	
+	<property name="courses">
+	
+	<map>
+	
+	<entry key="java" value="2 Months"/>
+	<entry key="Oracle" value="2.5 Months"/>
+	<entry key="Angular" value="3 Months"/>
+	<entry key="HTML" value="1.5 Months"/>
+	
+	</map>
+	
+	</property>
+	</bean>
+	
+	</beans>
